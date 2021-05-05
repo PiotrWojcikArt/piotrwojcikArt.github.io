@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <title>Piotr Wójcik - fotografia, grafika, muzyka</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="fotoreportaż, eseje fotograficzne, fotografia konceptualna; grafika and muzyka." />
+        <meta name="keywords" content="fotografia, polska, europa, życie, śluby, fotoreportaż, portret, dzieci, rodzina, jquery, vertical, scrolling, scroll, smooth"/>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/style_vertical.css" type="text/css" media="screen"/>
+       	<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+        
+    </head>
+    
+    <body>
+        <div class="nav">
+             <span class="reference">
+<a href="#section1"><img style="margin: 0px; float:left" src="img/homelogo.png" alt="home"/></a>  
+
+<a style="margin: 10px; padding: 0px; float:right;" href="private/g1/index.html">*</a>
+<a style="margin: 10px; padding: 0px; float:right;" href="index_en.html">en</a>
+<a style="margin: 10px; padding: 0px; float:right; color:#576172;" href="index_pl.html">pl</a>
+
+<a style="margin:10px 50px 10px 10px; padding: 0px; float:right;" href="#section7">kontakt</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section6">notes</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section5">grafika</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section4">muzyka</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section3">o mnie</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section2">oferta</a>
+<a style="margin:10px 10px 10px 10px; padding: 0px; float:right;" href="#section1">fotografia</a>
+</span>
+</div>
+        <div class="section black" id="section1"></br></br>
+                   <iframe style="width:100%; height:900px; border:none; margin: 0" src="juicebox/adam/index.html"></iframe>
+                   </div>
+        
+        <div class="section white" id="section2">
+            <p class="big">fotoreportaż, wydarzenia,<br>sesja ślubna, fotografia okolicznościowa,<br>sesja macierzyńska, zdjęcia rodzinne,<br>fotografia kreacyjna, portret oraz <br>współpraca artystyczna  
+            </p>
+            </div>
+                
+        <div class="section black" id="section3">
+            <p class="big">Fotografia jest dla mnie jedną z form autoekspresji.<br>Z aparatem w dłoni mogę kadrować rzeczywistość.<br>A dobry kadr cieszy. Jest jak żywa opowieść.
+            <br><br><br>Jeszcze jedna poniżej.<br> 
+            <a target="_blank" href="https://www.facebook.com/media/set/?set=a.826297080746006.1073741851.206976972678023&type=3">Zobacz.</a><br>           
+           <a target="_blank" href="https://www.facebook.com/media/set/?set=a.826297080746006.1073741851.206976972678023&type=3"><img style="margin: 20px; width:20%; height:20%;" src="https://scontent-a-cdg.xx.fbcdn.net/hphotos-xpa1/t31.0-8/s720x720/1274431_826299487412432_841407819903843828_o.jpg" alt="external link"/></a></p>           
+        </div>
+        
+<div class="section white" id="section4">
+            <p class="big">Kilka melodii.</p>
+       <iframe style="width:100%; height:100%; border:none; margin: 0" src="music/music.html"></iframe>
+</div>
+        
+                <div class="section black" id="section5">
+            <p class="big">Czasem tworzę grafikę komputerową. Zarówno rasterową jak i wektorową.</p>
+              </div>
+        
+        
+        <div class="section white" id="section6">
+               <p>...</p> 
+               </div>
+        
+        <div class="section black" id="section7" style="background-image:url(img/nothing.png)">
+            <p><img src="img/m.png" alt="kontakt"/><br><br><br></p>  
+        </div>
+        
+
+        
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('div.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+        															<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15192457-3', 'auto');
+  ga('send', 'pageview');
+
+																	</script>
+
+
+
+
+
+
+    </body>
+</html>

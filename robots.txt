@@ -1,0 +1,18 @@
+User-agent: *
+ Disallow: /img/
+
+User-agent: *
+ Disallow: /fotografia/
+
+User-agent: *
+Disallow: /*.ogg$
+
+User-agent: *
+Disallow: /*.mp3$
+
+User-agent: *
+Disallow: /*.jpg
+
+User-agent: *
+Disallow: /*.png
+

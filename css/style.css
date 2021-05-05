@@ -1,0 +1,22 @@
+html, body  { 
+font-size: 100%; 
+margin:0;
+  
+} 
+  
+
+img {border-style: none; } 
+img.center {display: block; margin-left: auto; margin-right: auto; }
+
+
+a {color:#fff; text-decoration:none;}
+a:hover{text-decoration:none; color:#5D78A5;}
+ 
+.textblock { margin:10px; padding:30px; display:inline; float:left;  color:#576172; background:url('../img/bg-black.png'); font:1em Helvetica, Arial, sans-serif;}
+
+
+
+ 
+ 
+ 
+ 
