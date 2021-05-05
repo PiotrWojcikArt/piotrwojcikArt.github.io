@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+galleryTitle="Horses (updated)"
+	galleryWidth="100%"
+	galleryHeight="100%"
+	backgroundColor="#212121"
+	showOpenButton="false"
+   showThumbsButton="false"
+   showExpandButton="false"
+   useThumbDots="true"
+   useFullscreenExpand="false"
+   >
+
+    <image imageURL="images/003.jpg"><title></title></image>
+    <image imageURL="images/004.jpg"><title></title></image>
+    <image imageURL="images/005.jpg"><title></title></image>
+    <image imageURL="images/006.jpg"><title></title></image>
+    <image imageURL="images/007.jpg"><title></title></image>
+    <image imageURL="images/008.jpg"><title></title></image>
+    <image imageURL="images/009.jpg"><title></title></image>
+    <image imageURL="images/010.jpg"><title></title></image>
+    <image imageURL="images/011.jpg"><title></title></image>
+    <image imageURL="images/012.jpg"><title></title></image>
+    
+</juiceboxgallery>

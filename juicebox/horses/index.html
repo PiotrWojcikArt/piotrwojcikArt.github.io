@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Piotr Wójcik - galeria</title>
+	<meta name="description" content="Galeria. Fotoreportaże." />
+	    <meta name="keywords" content="Piotr, Wojcik, photo, photography, foto, fotografia, sztuka, art, polska, poland" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../jbcore/classic/jb.vertical.template.css" />
+	<script type="text/javascript" src="../jbcore/juicebox.js"></script>
+	<script type="text/javascript">
+	var jbGallery;
+	function setContainerHeight() {
+		var winHeight, headerHeight, footerHeight;
+		winHeight = window.innerHeight ? window.innerHeight : $(window).height();
+		headerHeight = $('#header').outerHeight();
+		footerHeight = $('#footer').outerHeight();
+		var newH = parseInt(winHeight) - parseInt(headerHeight) - parseInt(footerHeight);
+		$('#juicebox-content').height(newH);
+		return newH;
+	}
+	
+	function doLayout() {
+		if(!jbGallery){
+			setContainerHeight();
+			return;
+		}
+		window.setTimeout(function(){
+			var winWidth;
+			winWidth = window.innerWidth ? window.innerWidth : $(window).width();
+			var newH = setContainerHeight();
+			jbGallery.setGallerySize(winWidth, newH);
+		}, 200);
+	}
+
+	$(document).ready(function () {
+		doLayout();
+		$(window).bind('resize', doLayout);
+		jbGallery = new juicebox({
+			containerid : 'juicebox-container'
+		});
+	});
+	</script>
+	
+</head>
+<body>
+	<div id="header">
+	  	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../adam/index.html">Adam</a>
+ 	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../michal/index.html">Michal</a>
+	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../carvin/index.html">Carvin</a>
+	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../horses/index.html">Horses</a>
+ 	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../gero/index.html">Gero</a>
+	<a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../misc/index.html">Misc</a>
+        <a style="border: solid 10px #111111; background-color: #111111; margin: 0 20px;" href = "../more/index.html">More</a>
+
+	</div>
+<div id="juicebox-content">
+		<div id="juicebox-container"></div>
+	</div>
+</body>
+</html>
